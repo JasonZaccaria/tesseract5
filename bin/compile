@@ -17,7 +17,7 @@ tar -zxvf $TESSERACT_OCR_TGZ -C $INSTALL_DIR
 #curl https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata > $INSTALL_DIR_TRAINING_DATA/eng.traineddata
 echo "Unpacking Tesseract-OCR binaries"
 mkdir -p $INSTALL_DIR_TRAINING_DATA
-combine_tessdata -u eng.traineddata /app/vendor/tesseract-ocr/tesseract-5.2.0/tessdata/eng.traineddata
+combine_tessdata -u eng.traineddata /app/vendor/tesseract-ocr/tesseract-5.2.0/tessdata/
 
 echo "Building runtime environment for Tesseract-OCR"
 mkdir -p $BUILD_DIR/.profile.d
